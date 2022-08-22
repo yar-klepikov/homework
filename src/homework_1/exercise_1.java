@@ -12,7 +12,7 @@ public class exercise_1 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        while (true) { // цикл не нужен но с ним было проще несколько значений сразу проверять
+        while (true) { // цикл не нужен но с ним было проще несколько значений сразу проверять, можно и без него
             System.out.println("Enter a number from 100 to 999:");
             int number = scan.nextInt();
             if (number < 100 || number > 999) {

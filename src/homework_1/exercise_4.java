@@ -7,6 +7,7 @@ public class exercise_4 {
 
     // Списки совсем не понмню надо повторять, как то вот так кустрано, еси чесно то надо сильно повторять основы)) надеюсь что хотябы рядом)
 
+
     public static void main(String[] args) {
         int[] myArray = new int[20];
         int[] myArray2 = new int[20];
@@ -49,7 +50,7 @@ public class exercise_4 {
         System.out.println("first");
         for (int i = 0; i < 20; i++) {
             if (doNotRepeat[i] != 0) {
-                System.out.println((i + 1)+ " = " + doNotRepeat[i]);
+                System.out.println((i + 1) + " = " + doNotRepeat[i]);
             }
         }
         System.out.println("second");
@@ -60,3 +61,4 @@ public class exercise_4 {
         }
     }
 }
+

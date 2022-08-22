@@ -6,6 +6,7 @@ import java.util.Scanner;
         • общий их вес;
         • причина, по которой прекращен вход людей в лифт. */
 
+
 public class exercise_3 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
@@ -13,10 +14,9 @@ public class exercise_3 {
         for (int i = 1; i <= 6; i++) {
             System.out.println("Enter passenger weight:");
             int weight = scan.nextInt();
-            if (sumWeight + weight < 450){
+            if (sumWeight + weight < 450) {
                 sumWeight = weight + sumWeight;
-            }
-            else {
+            } else {
                 System.out.println("Maximum weight exceeded" + "\n" +
                         "Total passenger weight: " + sumWeight + "\n" +
                         "Number of passengers: " + (i - 1));

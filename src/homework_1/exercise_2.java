@@ -7,6 +7,7 @@ package homework_1;
 */
 
 public class exercise_2 {
+
     public static void main(String[] args) {
         for (int i = 100; i < 1000; i++) {
             if (i % 10 == 0) {
