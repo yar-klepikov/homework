@@ -54,4 +54,3 @@ static final public int number = 20;
         }
     }
 }
-
