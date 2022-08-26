@@ -22,6 +22,8 @@ public class exercise_2_1 {
     }
 
     static boolean Raz(double x, double y, double centr_x, double centr_y, double r) {
-        return (Math.sqrt(x - centr_x)) + (Math.sqrt(y - centr_y)) <= Math.sqrt(r);
+        double xa = (x - centr_x)*(x - centr_x);
+        double ya = (y - centr_y)*(y - centr_y);
+        return (Math.sqrt(xa + ya)) <= r;
     }
 }
