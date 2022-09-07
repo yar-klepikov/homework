@@ -12,7 +12,6 @@ public class Moto extends Machine implements Machine.powerEngine, Machine.isTaxe
     protected void getData() {
         super.getData();
     }
-
     @Override
     public int powerEngine() {
         while (true) {
@@ -22,23 +21,14 @@ public class Moto extends Machine implements Machine.powerEngine, Machine.isTaxe
             }
         }
     }
-
     @Override
     public boolean isTaxes() {
         return power > 110;
-
     }
-
-    public int getPowerpower() {
-        return power;
-    }
-
     public boolean getTaxes() {
         return taxes;
     }
-
     public String getType() {
         return type;
     }
-
 }

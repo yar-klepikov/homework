@@ -12,31 +12,22 @@ public class Cargo extends Machine implements Machine.powerEngine, Machine.isTax
     protected void getData() {
         super.getData();
     }
-
     @Override
     public int powerEngine() {
         while (true) {
-            power = (int) (Math.random() * 150);
-            if (power > 30 && power < 150) {
+            power = (int) (Math.random() * 1000);
+            if (power > 300 && power < 1500) {
                 return power;
             }
         }
     }
-
     @Override
     public boolean isTaxes() {
-        return power > 110;
-
+        return true;
     }
-
-    public int getPowerpower() {
-        return power;
-    }
-
     public boolean getTaxes() {
         return taxes;
     }
-
     public String getType() {
         return type;
     }

@@ -3,8 +3,7 @@ package homework_5;
 public class Auto extends Machine implements Machine.powerEngine {
     int passengers = 4;
     int weight = 200;
-        private String type = "Auto";
-        private int numberOfAxles = 4;
+    private int numberOfAxles = 4;
         private int power = powerEngine();
         private String license = license(numberOfAxles);
         boolean taxes = isTaxes();
@@ -13,7 +12,6 @@ public class Auto extends Machine implements Machine.powerEngine {
         protected void getData(){
         super.getData();
     }
-
         @Override
         public int powerEngine() {
             while (true) {
@@ -23,20 +21,14 @@ public class Auto extends Machine implements Machine.powerEngine {
                 }
             }
         }
-
         public boolean isTaxes() {
             return power > 300;
         }
-
-        public int getPowerpower() {
-            return power;
-        }
-
         public boolean getTaxes() {
             return taxes;
         }
-
         public String getType() {
+            String type = "Auto";
             return type;
         }
     }
